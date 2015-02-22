@@ -10,11 +10,12 @@ cacheSolve(m)   # Computes, caches, and returns matrix inverse
 #[,1] [,2]
 #[1,]   -2  1.5
 #[2,]    1 -0.5
-m$getinverse()  # Returns matrix inverse
+m$getinverse()  # Retrieve matrix inverse
 #[,1] [,2]
 #[1,]   -2  1.5
 #[2,]    1 -0.5
 cacheSolve(m)   # Returns cached matrix inverse using previously computed matrix inverse getting cached data
+#Getting cached data
 #[,1] [,2]
 #[1,]   -2  1.5
 #[2,]    1 -0.5
@@ -25,6 +26,15 @@ m$get()
 # [2,]    4    1
 #Inversing the matrix in R
 cacheSolve(m)
+#      [,1] [,2]
+# [1,] -0.1  0.3
+# [2,]  0.4 -0.2
+m$getinverse()  # Retrieve matrix inverse
+#      [,1] [,2]
+# [1,] -0.1  0.3
+# [2,]  0.4 -0.2
+cacheSolve(m)   # Returns cached matrix inverse using previously computed matrix inverse getting cached data
+#Getting cached data
 #      [,1] [,2]
 # [1,] -0.1  0.3
 # [2,]  0.4 -0.2
